@@ -70,4 +70,22 @@ public class BinaryTree {
             System.out.print(node.getValue() + " , ");
         }
     }
+
+    public boolean findeValue(int value) {
+        return findeValueRecursive(root, value);
+    }
+
+    private boolean findeValueRecursive(Node node, int value) {
+        if (node == null) {
+            return false; 
+        }
+        if (node.getValue() == value) {
+            return true; 
+        }
+        if (value < node.getValue()) {
+            return findeValueRecursive(node.getRefIzquierda(), value);
+        } else {
+            return findeValueRecursive(node.getRefDerecha(), value);
+        }
+    }
 }
