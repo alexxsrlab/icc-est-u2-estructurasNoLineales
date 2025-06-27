@@ -4,6 +4,7 @@ public class Node {
     private Node refIzquierda;
     private Node refDerecha;
     private int Value;
+    private int heigth;
 
 
     public Node(int Value) {
@@ -46,9 +47,21 @@ public class Node {
         Value = value;
     }
 
+    public int getHeigth() {
+        return heigth;
+    }
+
+    public void setHeigth(int heigth) {
+        this.heigth = heigth;
+    }
+
     @Override
     public String toString() {
         return "Node [Value=" + Value + "]";
     }
+
+   
+
+    
 
 }

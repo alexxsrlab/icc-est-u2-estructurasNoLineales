@@ -3,6 +3,22 @@ import Materia.Models.Node;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        
+        System.out.println("Ariel Badillo");
+        AVLTree avl = new AVLTree();
+
+        avl.insert(5);
+        avl.insert(20);
+        avl.insert(15);
+
+
+
+
+
+
+
+
+        /*
         BinaryTree ab = new BinaryTree();
         ab.insert(50);
         ab.insert(17);
@@ -12,7 +28,7 @@ public class App {
         ab.insert(54);
         ab.insert(14);
         ab.insert(19);
-        /*
+        
          * System.out.print("Pre-Order");
          * ab.Preorder();
          * System.out.print("Post-Order");
@@ -31,7 +47,7 @@ public class App {
          * }else{
          * System.out.println("No encontro el valor 77");
          * }
-         */
+         
 
         System.out.println();
         ab.printSize();
@@ -50,5 +66,6 @@ public class App {
         ab.insert(15);
         System.out.println("Arbol esta equilibrado = " + ab.isBalanced());
         ab.printBalanceWithDesequilibrados();
+        */
     }
 }
